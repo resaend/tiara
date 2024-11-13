@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+ 
+  padding: 100px 50px;
+}
+
+h1 {
+  text-align: center;
+  margin-block-end: 2.5rem;
+}
+
+.stock-ticker {
+  font-size: 15px;
+  padding-block: 8px;
+  border-block: 0px solid;
+  overflow: hidden;
+  user-select: none;
+
+  --gap: 20px;
+  display: flex;
+  gap: var(--gap);
+}
+
+.stock-ticker ul {
+  list-style: none;
+  flex-shrink: 0;
+  min-width: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+
+  animation: scroll 20s linear infinite;
+}
+
+.stock-ticker:hover ul {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.stock-ticker .company,
+.stock-ticker .price {
+  font-weight: bold;
+}
+
+.stock-ticker .price {
+  margin-inline: 0px;
+}
+
+
+  </style>
+</head>
+
+<!-- body start -->
+<body class="bg-black">
+  
+<section class="">
+  <!-- jumbotron -->
+  <div class="max-w-screen-xl flex items-center min-h-screen px-2 lg:px-4 py-12 mb-16 pb-16 mx-auto text-center lg:py-16 delay-[300ms] duration-[2000ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="100">
+    <div class="">
+      <h1 class="mb-8 text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl">Hi, Tiara!<span class="wave">👋</span></h1>
+      <p class="mb-16 text-base text-gray-500 sm:px-16 lg:text-lg lg:px-48 dark:text-gray-400">This little corner right here, It’s all about us. Just a bunch of our memories, moments, and all those little things that make our story special. I put this together for you, just to remind you how much you mean to me and how lucky I feel to have you around. Let’s keep making memories <a class="underline decoration-slice decoration-2 decoration-pink-500 underline-offset-auto">together</a>!</p> 
+    </div>
+  </div>
+  <!-- end of jumbotron -->
+
+  <!-- memories -->
+   <div class="text-white max-w-screen-xl  min-h-screen px-4 py-8 mx-auto text-center lg:py-16 delay-[300ms] duration-[2000ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="100">
+    <h2 class="mb-8 text-4xl font-extrabold leading-none tracking-tight text-white b-8 md:text-3xl lg:text-3xl">Memories That Make Us, Us</h2>
+    <p class="mb-16 text-base text-gray-500 sm:px-16 lg:text-lg lg:px-48 dark:text-gray-400">Every laugh and every little moment, these are the pieces that make our story something special. From the first day we met to all the random, everyday memories we’ve made since, each one’s shaped who we are together. This is our collection, our story, our journey through all the unforgettable moments.</p>
+    
+
+<div class="grid grid-cols-2 gap-4 md:grid-cols-3">
+  <div>
+      <img class="h-auto max-w-full rounded-lg delay-[100ms] duration-[2000ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="100" src="https://i.ibb.co.com/HK4WYcp/Whats-App-Image-2024-11-13-at-13-05-29-2be2a484.jpg" alt="">
+  </div>
+  <div>
+      <img class="h-auto max-w-full rounded-lg delay-[300ms] duration-[2000ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="100" src="https://i.ibb.co.com/7WHwZyP/Whats-App-Image-2024-11-13-at-13-05-29-aa42dd22.jpg" alt="">
+  </div>
+  <div>
+      <img class="h-auto max-w-full rounded-lg delay-[500ms] duration-[2000ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="100" src="https://i.ibb.co.com/x2GZjj5/Whats-App-Image-2024-11-13-at-13-05-29-65356c95.jpg" alt="">
+  </div>
+  <div>
+      <img class="h-auto max-w-full rounded-lg delay-[100ms] duration-[2000ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="100" src="https://i.ibb.co.com/44g6W0g/Whats-App-Image-2024-11-13-at-13-05-28-0337bbc7.jpg" alt="">
+  </div>
+  <div>
+      <img class="h-auto max-w-full rounded-lg delay-[300ms] duration-[2000ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="100" src="https://i.ibb.co.com/yf0RQSK/Whats-App-Image-2024-11-13-at-13-05-26-fd8e5ce6.jpg" alt="">
+  </div>
+  <div>
+      <img class="h-auto max-w-full rounded-lg delay-[500ms] duration-[2000ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="100" src="https://i.ibb.co.com/tqyD3TF/Whats-App-Image-2024-11-13-at-13-05-26-9e6ab059.jpg" alt="">
+  </div>
+</div>
+</div>
+<!-- timeline -->
+  <div class="max-w-screen-xl px-4 py-8 mx-auto">
+    <ol class="relative border-gray-200 border-s delay-[300ms] duration-[2000ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="200">                  
+      <li class="mb-10 ms-4 delay-[400ms] duration-[2000ms] taos:translate-x-[200px] taos:opacity-0">
+          <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+          <time class="mb-1 text-sm font-normal leading-none text-gray-400">August 27, 2024</time>
+          <h3 class="text-lg font-semibold text-white ">Our first match on Bumble</h3>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">That day was the first time we both swiped right on Bumble. I was kinda into your picture, then we started getting to know each other, but honestly, I never thought we'd get this far. I don’t even know what made me so eager to get to know you, but it’s something I’ll never regret, because with you, I feel so happi.</p>
+          <img class="max-w-56 rounded-lg delay-[500ms] duration-[2000ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="400" data-taos-offset="400" data-taos-offset="100" src="https://i.ibb.co.com/6rTmdtH/Whats-App-Image-2024-11-13-at-14-08-35-1dc235eb.jpg" alt="">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+    </svg></a>
+      </li>
+      <li class="mb-10 ms-4 delay-[400ms] duration-[2000ms] taos:translate-x-[200px] taos:opacity-0">
+        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+        <time class="mb-1 text-sm font-normal leading-none text-gray-400">October 6, 2024</time>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">The first time I saw you</h3>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">It was kinda funny, cuz we were both nervous, thinking we might not meet each other's expectations, lol. But trust me, you've been beautiful from that moment till now.</p>
+          <img class="max-w-56 rounded-lg delay-[500ms] duration-[2000ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="100" src="https://i.ibb.co.com/rQMM0cW/Whats-App-Image-2024-11-13-at-14-25-23-908ea39b.jpg" alt="">
+      </li>
+      <li class="mb-10 ms-4 delay-[400ms] duration-[2000ms] taos:translate-x-[200px] taos:opacity-0">
+        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+        <time class="mb-1 text-sm font-normal leading-none text-gray-400">October 11, 2024</time>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Our first date</h3>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">That day we were still shy wkwk You still couldn’t look me in the eye directly, and it was a little awkward wkwk. Anw, I still think about that moment a lot, I’ve never forgotten it hehe.</p>
+          <img class="max-w-56 rounded-lg delay-[500ms] duration-[2000ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="100" src="https://i.ibb.co.com/zHHPNFV/Whats-App-Image-2024-11-13-at-13-05-33-2e10fa39.jpg" alt="">
+      </li>
+      <li class="mb-10 ms-4 delay-[400ms] duration-[2000ms] taos:translate-x-[200px] taos:opacity-0">
+        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+        <time class="mb-1 text-sm font-normal leading-none text-gray-400">November 2, 2024</time>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Finally, you are mine</h3>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">I never expected we'd end up together this quickly, but I was scared that if I waited too long to make things clear, you'd walk away. So, in that moment, I took a chance and made you completely mine.</p>
+          <img class="max-w-56 rounded-lg delay-[500ms] duration-[2000ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="100" src="https://i.ibb.co.com/b5bRyHC/Whats-App-Image-2024-11-13-at-14-41-24-e91878dc.jpg" alt="">
+      </li>
+      <li class="mb-10 ms-4 delay-[400ms] duration-[2000ms] taos:translate-x-[200px] taos:opacity-0">
+        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"></div>
+        <time class="mb-1 text-sm font-normal leading-none text-gray-400">November 9, 2024</time>
+          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Your graduation day</h3>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">I It’s not just your happy moment, but that day was also a happi moment for me because we did so many things together, and I even got to know you and your family better.</p>
+          <img class="max-w-56 rounded-lg delay-[500ms] duration-[2000ms] taos:translate-x-[200px] taos:opacity-0" data-taos-offset="100" src="https://i.ibb.co.com/tqyD3TF/Whats-App-Image-2024-11-13-at-13-05-26-9e6ab059.jpg" alt="">
+      </li>
+  </ol>
+</div>
+</section>
+
+
+<div class="mt-32 text-white max-w-screen-xl  min-h-screen px-4 py-8 mx-auto text-center lg:py-16 delay-[300ms] duration-[2000ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="100">
+  <h2 class="mb-8 text-4xl font-extrabold leading-none tracking-tight text-white b-8 md:text-3xl lg:text-3xl">Miles & Memories</h2>
+  <p class="mb-16 text-base text-gray-500 sm:px-16 lg:text-lg lg:px-48 dark:text-gray-400">Every mile we’ve walked together, every laugh, and even those quiet moments in between, have turned into memories I’ll always keep close. From the very first step we took to where we are now, it’s been a journey full of love, growth, and so much happiness. Here’s to all the miles we’ve already shared and all the memories still waiting to happen</p>
+
+<div class="stock-ticker">
+  <ul>
+    <li class="minus">
+      <span class="text-white change">
+        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-600 focus:outline-none bg-transparent rounded-full border border-gray-600 ">CGV</button>
+      </span>
+    </li>
+    <li class="minus">
+      <span class="text-white change">
+        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-600 focus:outline-none bg-transparent rounded-full border border-gray-600 ">Dali Coffe Factory</button>
+      </span>
+    </li>
+    <li class="minus">
+      <span class="text-white change">
+        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-600 focus:outline-none bg-transparent rounded-full border border-gray-600 ">Gusta Coffee</button>
+      </span>
+    </li>
+    <li class="minus">
+      <span class="text-white change">
+        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-600 focus:outline-none bg-transparent rounded-full border border-gray-600 ">Kayu Putih Cafe</button>
+      </span>
+    </li>
+    <li class="minus">
+      <span class="text-white change">
+        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-600 focus:outline-none bg-transparent rounded-full border border-gray-600 ">Dali Coffe Factory 2</button>
+      </span>
+    </li>
+    <li class="minus">
+      <span class="text-white change">
+        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-600 focus:outline-none bg-transparent rounded-full border border-gray-600 ">Kopi Kenangan</button>
+      </span>
+    </li>
+    <li class="minus">
+      <span class="text-white change">
+        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-600 focus:outline-none bg-transparent rounded-full border border-gray-600 ">
+          Skyline Best View Resto</button>
+      </span>
+    </li>
+  </ul>
+  <ul>
+    <li class="minus">
+      <span class="text-white change">
+        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-600 focus:outline-none bg-transparent rounded-full border border-gray-600 ">CGV</button>
+      </span>
+    </li>
+    <li class="minus">
+      <span class="text-white change">
+        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-600 focus:outline-none bg-transparent rounded-full border border-gray-600 ">Dali Coffe Factory</button>
+      </span>
+    </li>
+    <li class="minus">
+      <span class="text-white change">
+        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-600 focus:outline-none bg-transparent rounded-full border border-gray-600 ">Gusta Coffee</button>
+      </span>
+    </li>
+    <li class="minus">
+      <span class="text-white change">
+        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-600 focus:outline-none bg-transparent rounded-full border border-gray-600 ">Kayu Putih Cafe</button>
+      </span>
+    </li>
+    <li class="minus">
+      <span class="text-white change">
+        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-600 focus:outline-none bg-transparent rounded-full border border-gray-600 ">Dali Coffe Factory 2</button>
+      </span>
+    </li>
+    <li class="minus">
+      <span class="text-white change">
+        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-600 focus:outline-none bg-transparent rounded-full border border-gray-600 ">Kopi Kenangan</button>
+      </span>
+    </li>
+    <li class="minus">
+      <span class="text-white change">
+        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-600 focus:outline-none bg-transparent rounded-full border border-gray-600 ">
+          Skyline Best View Resto</button>
+      </span>
+    </li>
+
+  </ul>
+</div>
+
+
+<div class="max-w-screen-xl flex items-center min-h-screen px-2 lg:px-4 py-12 mb-16 pb-16 mx-auto text-center lg:py-16 delay-[300ms] duration-[2000ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="100">
+  <div class="">
+    <h1 class="mb-8 text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl">So, where to next?</h1>
+    <p class="mb-16 text-base text-gray-500 opacity-0 sm:px-16 lg:text-lg lg:px-48 dark:text-gray-400">This little corner right here, It’s all about us. Just a bunch of our memories, moments, and all those little things that make our story special. I put this together for you, just to remind you how much you mean to me and how lucky I feel to have you around. Let’s keep making memories <a class="underline decoration-slice decoration-2 decoration-pink-500 underline-offset-auto">together</a>!</p> 
+    <p class="mb-16 text-base text-gray-500 sm:px-16 lg:text-lg lg:px-48 dark:text-gray-400">Made with ❤️ by <a href="instagram.com/resaendr">res</a></p> 
+  </div>
+</div>
+
+  <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+</body>
+</html>
